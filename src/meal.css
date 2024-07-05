@@ -1,0 +1,148 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+      Arial, sans-serif;
+    margin: auto;
+    padding: 1rem;
+  }
+
+  .meal-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #meal-image {
+    left: 0;
+    top: 0;
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .meal-info {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .instructions {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .ingredients {
+    flex: 1;
+  }
+  
+  #meal-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #meal-instructions {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  #meal-ingredients {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #meal-ingredients li {
+    margin-bottom: 10px;
+  }
+
+  .video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #meal-video {
+    padding-top: 10px;
+    margin-right: 20px;
+  }
+  
+  .meal-meta {
+    flex: 1;
+  }
+  
+  #meal-category, #meal-area, #meal-tags {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+header {
+    background-color: rgba(107, 107, 107, 0);
+    color: #8DABA8;
+    padding: 10px;
+    text-align: center;
+  }
+  
+.stickynav {
+    top: 0;
+    background-color: #8DABA8;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px 30px;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 1000;
+  }
+  
+a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 20px;
+    letter-spacing: 0.5px;
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  .stickynav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.5s linear;
+  }
+  
+a:hover {
+    color: #fff;
+  }
+  
+a:hover:after {
+    width: 100%;
+  }
+
+#favourite-btn {
+  height: 60px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #8DABA8;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#favourite-btn:hover {
+  background-color: #8DABA8;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

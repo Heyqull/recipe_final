@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Meal Page</title>
+    <link rel="stylesheet" href="meal.css" />
+  </head>
+  <body>
+    <header>
+        <h1>FOOD RECIPE</h1>
+      </header>
+      <hr size="1" style="margin: 0; padding: 0;">
+          <nav class="stickynav" >
+              <a href="index.html">MAIN PAGE</a>
+              <a href="Men.html">MEAL IDEAS</a>
+              <a href="favourite.html">BOOKMARK</a>
+          </nav>
+      </hr>
+    </header>
+    <div class="meal-container">
+      <img id="meal-image" src="" alt="Meal Image">
+      <div class="meal-info">
+        <div class="instructions">
+          <h1 id="meal-title"></h1>
+          <p id="meal-instructions"></p>
+        </div>
+        <div class="ingredients">
+          <h2>Ingredients:</h2>
+          <ul id="meal-ingredients"></ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!--Youtube video instructions will be displayed here-->
+    <div class="video-container">
+      <iframe id="meal-video" width="600" height="315" src="" frameborder="0" allowfullscreen></iframe>
+      <div class="meal-meta">
+        <p id="meal-category"></p>
+        <p id="meal-area"></p>
+        <p id="meal-tags"></p>
+        <button id="favourite-btn">Add to Favourites</button>
+      </div>
+    </div>
+    <script src="meal.js"></script>
+  </body>
+</html>

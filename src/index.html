@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <header>
+    <h1>FOOD RECIPE</h1>
+  </header>
+  <hr size="1" style="margin: 0; padding: 0;">
+      <nav class="stickynav" >
+          <a href="index.html">MAIN PAGE</a>
+          <a href="mealidea.html">MEAL IDEAS</a>
+          <a href="favourite.html">BOOKMARK</a>
+      </nav>
+  </hr>
+  <div>
+  <body>
+    <div id="slideshow-container">
+      <div id="slideshow">
+      </div>
+      <div id="slideshow-dots"></div>
+    </div>
+    <h3 style="color: #8DABA8;">Dont know what to cook? <span><a href="mealidea.html" style="color: #8DABA8; text-decoration: underline;">Click here!</a></span></h3>
+    <div class="search-bar-container">
+      <input type="text" id="recipe_input" placeholder="Enter Recipe">
+      <button onclick="buttonClicked()"><i class="fas fa-search"></i></button>
+    </div>
+    <div id="meal-list"></div>
+    <!--meal list from the database is shown here-->
+    <script src="main.js"></script>
+  </body>
+</html>
